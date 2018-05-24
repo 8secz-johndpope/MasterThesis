@@ -1,39 +1,5 @@
 \chapter{Introduction}
-近年， .....
+\par Seiler claims that "The presentation is the art of persuasion. It plays a significant role in our society and has the tremendous impact on the success of everyone"\cite{seiler2002communication}. However, it is not as simple as computer data transmission which requires certain skills\cite{rosenberg2005acoustic}. One aspect is the preparation of the slides and speech draft in advance, and it can be relatively easily refined by revising the presentation plan and the speech draft many times by oneselves or professionals. The other is the way the orator delivers the presentation to others, and it contains verbal style and various nonverbal behaviors. 
+\par The important component of a presentation lies upon nonverbal cues which have the power to change the meaning assigned to spoken words\cite{seiler2002communication}. According to Argyle nonverbal messages are thirteen to fourteen times more powerful than verbal ones\cite{argyle1971communication}. Likewise, Arcy showed that the audience receives more than half of information from nonverbal behaviors\cite{d1998communicating}.  The fact that most people unconsciously believe more in nonverbal behaviors than verbal cues was also found during the study of Seiler\cite{seiler2002communication}.
+\par Unfortunately, it's hard to practice to express the effective nonverbal behaviors because they are mostly expressed subconsciously. According to Seiler \cite{seiler2002communication}, imitate past famous speech will help trainee to refine their nonverbal behaviors. To refine the trainees' nonverbal behaviors, we propose a presentation training system that allow trainee to imitate past famous speech to improve their nonverbal behaviors. Nonverbal behaviors include many aspects, and we choose to analyze the motion of orators as the nonverbal behaviors in this paper. We employed OpenPose library\cite{cao2017realtime} to extract orators' motion data from past famous speech 2D video. While training, the system capture trainee's motion in real-time using Microsoft Kinect and match it with the motion in the past famous speech. We choose the cosine similarity of adjacent limbs as features to get the similarity of the trainees' motion and the motion of extracted orators.
 
-% rout or redout -> red color font
-\rout{
-本論文の内容は，小柳研のある方からゲルがもらったテックファイルに適当に書き込んだ不完全なものである．
-そのため，以下で書かれた内容をそのまままねして卒論を書いても完全となる保証はないので，自己責任で本ファイルを作成すること．
-なお，表紙をなどをもっと格好良くできた方はゲルに連絡すること．
-}
-
-\begin{itemize}
- % デフォルトの箇条書きは項目間や段落間のスペースが広いので下記のように調整した方が綺麗に見えるかも
- \setlength{\parskip}{0cm} % 段落間
- \setlength{\itemsep}{0cm} % 項目間
- \item どのような分野の研究か，その背景について説明する．
- \item その分野の従来の研究状況について説明する．
- \item そして，何が解決すべき問題（本論文で扱った問題）かを説明．
- \item どのようなアイデアで解決したか，キーアイデアを少しだけ披露
- \item どのような（実験）結果が得られたか、アピール（目次案の段階では希望的予測）
-\end{itemize}
-
-参考文献は，bibitexを使うようにしましょう\cite{栗原一貴2006プレゼン先生}．
-% 参照はこんな感じ~\cite{Sentovich92}．
-同じフォルダにあるreferences.bibというか，適当にbibtexを検索して使い方を勉強してください．
-特に注意しないといけないのは，{\bf 括弧や，コンマ，セミコロン，''などの前後にスペースがあるかないか，よく観察してください．
-原則，「英語として正しい表記」がされていないとだめです．
-例えば，Kluwer Academic Press(1999) はNGです．
-Pressと（の間にスペースがないとスペルチェッカーでエラーがでますよ！}
-
-
- \section{Previous Research}
- 先行研究が多い場合は，2章や3章にするか，1章の中で節を分けて説明するのも良い．
-
- Introの最後は，あとの構成について述べる．
-
- 以下，第2章で○○の概要を述べる．
- 続いて，第3章で先行研究について述べる.
- そして，第4章で提案手法について述べ，第5章では提案手法の評価方法とその結果について述べる.
- 最後に第6章でまとめと今後の課題を述べる.

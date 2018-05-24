@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex temp/thesis"] 1527131682 "temp/thesis.aux" "temp/thesis.bbl" "temp/thesis" 1527131820
-  "junsrt.bst" 0 -1 0 ""
-  "presentation_traing.bib" 1526432795 4067 545e18c4a626ffe7e895e68f76e803bd ""
-  "temp/thesis.aux" 1527131819 1631 9f921ab0d42c79db1340e83d7d06d179 ""
+["bibtex temp/thesis"] 1527134727 "temp/thesis.aux" "temp/thesis.bbl" "temp/thesis" 1527134943
+  "/Users/shiyuhua/Documents/Reference/presentation_traing.bib" 1527134725 5212 8567c346aaa7de4222566c4c39d8da55 ""
+  "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
+  "temp/thesis.aux" 1527134943 1975 a88b0b6cff78c57010503bac3229dedd ""
   "temp/thesis.bcf" 0 -1 0 ""
   (generated)
   "temp/thesis.blg"
   "temp/thesis.bbl"
-["dvipdf"] 1527131819 "temp/thesis.dvi" "temp/thesis.pdf" "temp/thesis" 1527131820
-  "temp/thesis.dvi" 1527131819 19992 3b04c1a7992779b3f0d73011b053ad66 "latex"
+["dvipdf"] 1527134943 "temp/thesis.dvi" "temp/thesis.pdf" "temp/thesis" 1527134943
+  "temp/thesis.dvi" 1527134943 20336 d1b899d4badfe2ec2c6cfba2179f044b "latex"
   (generated)
   "temp/thesis.pdf"
-["latex"] 1527131818 "thesis.tex" "temp/thesis.dvi" "thesis" 1527131820
+["latex"] 1527134942 "thesis.tex" "temp/thesis.dvi" "thesis" 1527134943
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm" 1136768653 2124 2601a75482e9426d33db523edf23570a ""
@@ -65,20 +65,20 @@
   "/usr/local/texlive/2016/texmf-var/web2c/eptex/platex.fmt" 1480908479 4058165 80c6174f6e7c487eaec67c72ded9a1c1 ""
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
   "0-abstract.tex" 1527130142 162 721ec83d3dc4947bddb83dc51fe827a4 ""
-  "1-introduction.tex" 1527130473 2448 59e0bcc5ae0a93d943af5be010d34e88 ""
+  "1-introduction.tex" 1527134251 2266 1ad29728a99adf5243ce068fabaecc01 ""
   "1.2-relatedwork.tex" 1527131506 2418 134432a8183310525739f4a3b3a51867 ""
   "2-preparation.tex" 1527131373 169 e7c4d19fd5a4b6ff265c683f05dc4bcd ""
   "3-proposed.tex" 1527131319 1184 deb6e2de38fae0460c54831f6822abab ""
   "4-experiment.tex" 1527130854 1442 445c0af7341ac42a383619886b22f761 ""
   "5-conclusion.tex" 1527130915 706 eb147fab0dcf0fa561bb83a4e53d6cc7 ""
   "6-acknowledgement.tex" 1527130878 1494 7baad84fa126fc8ddcdad681ab51517a ""
-  "sty/NGC.sty" 1527131817 6451 68c8d056dd74e20e7b4628b8540a08e8 ""
-  "temp/thesis.aux" 1527131819 1631 9f921ab0d42c79db1340e83d7d06d179 ""
-  "temp/thesis.bbl" 1527131682 456 6e7d58fe025c2940eaa79852ae328129 "bibtex temp/thesis"
-  "temp/thesis.lof" 1527131819 120 4b5392bf4295ae9f4473a7a4fff7fdc5 ""
-  "temp/thesis.lot" 1527131819 193 5b630469e5a0f3d33852b846c4bb55ec ""
-  "temp/thesis.toc" 1527131819 518 0f9340c9b8d5dbf3a5df1ab6ab98a7f1 ""
-  "thesis.tex" 1527131455 1047 f2c79bfd3e6831e27b4371a5f9aa9e61 ""
+  "sty/NGC.sty" 1527134941 6452 23db921e67997574219e77d18f6020c5 ""
+  "temp/thesis.aux" 1527134943 1975 a88b0b6cff78c57010503bac3229dedd ""
+  "temp/thesis.bbl" 1527134727 1309 f396436dfe3bc2cd3fd1cdb98c8d8b9f "bibtex temp/thesis"
+  "temp/thesis.lof" 1527134943 120 4b5392bf4295ae9f4473a7a4fff7fdc5 ""
+  "temp/thesis.lot" 1527134943 193 5b630469e5a0f3d33852b846c4bb55ec ""
+  "temp/thesis.toc" 1527134943 455 aa3d0d72544ac3e1f1ed5e874f895c3c ""
+  "thesis.tex" 1527134700 1121 e8c6354ff802e68c1430df552853439c ""
   (generated)
   "temp/thesis.toc"
   "temp/thesis.dvi"

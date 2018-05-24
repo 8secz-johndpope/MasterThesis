@@ -120,11 +120,11 @@ INPUT temp/thesis.lot
 OUTPUT temp/thesis.lot
 INPUT 1-introduction.tex
 INPUT 1-introduction.tex
+INPUT 1.2-relatedwork.tex
+INPUT 1.2-relatedwork.tex
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT 1.2-relatedwork.tex
-INPUT 1.2-relatedwork.tex
 INPUT 2-preparation.tex
 INPUT 2-preparation.tex
 INPUT 3-proposed.tex

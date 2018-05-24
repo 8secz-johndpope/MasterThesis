@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# 修論のサンプル
 s1さんの修論を元に作成されています
 http://192.168.100.21/gitbucket/git/utisam/masters-thesis.git
@@ -48,3 +49,7 @@ PDF 以外は ``img/`` で構いません。
 * ディレクトリパス等の設定が必要（backup.shを開いて編集してください）
 * chmod +x backup.sh (実行権限なければ)
 * ./backup.sh
+=======
+# MasterThesis
+MasterThesis
+>>>>>>> ad909a996aa2435fccd050e6ae6e6df5fa9417a2

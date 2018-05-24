@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt,dvipdfmx]{jreport}
+
+%%%% lib-sty
+%% package足りない人はREADME見てください
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{cite} % 文献参照の様式を拡張
+\usepackage{algorithm, algpseudocode} % アルゴリズム書く人用
+\usepackage{mathptmx}
+%%% site-sty
+
+%%% original
+\usepackage{sty/NGC}
+
+\title{Presentation Training System Based On\\Imitating Past Famous Speech}
+\author{SHI Yuhua}
+\stdnum{6612160065-0}
+\date{\today}
+% \date{2016 年 2 月 8 日}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% 本文 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\baselineskip 1.9zw
+\maketitle
+
+
+\newpage
+\thispagestyle{empty}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\input{0-abstract}
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+\input{1-introduction}
+\input{2-preparation}
+\input{3-proposed}
+\input{4-experiment}
+\input{5-conclusion}
+\input{6-acknowledgement}
+
+\bibliographystyle{junsrt}
+% \bibliography{ref}
+\bibliography{presentation_traing}
+\end{document}

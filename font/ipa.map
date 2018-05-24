@@ -1,0 +1,15 @@
+%
+% IPAexフォントを埋め込む
+% 明朝体が太字にならないので注意
+%
+% もし持っているなら
+%   ヒラギノ(Macに付属)
+%   小塚(Adobeに付属)
+%   モリサワ(有料)
+% あたりを使った方が良い
+%
+
+rml     H       ipam.ttf
+rmlv    V       ipam.ttf
+gbm     H       ipag.ttf
+gbmv    V       ipag.ttf

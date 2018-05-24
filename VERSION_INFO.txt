@@ -1,0 +1,22 @@
+2016 02 18
+ 余白変更
+ 卒論用のタイトルもコメントアウトでNGC.styに追加
+ ディレクトリ構造の変更
+ READMEの充実
+ algorithmなどの使い方の追加
+ true, falseを定義 (for algpseudocode)
+ rout, boutなど，短い名前の文字色変更コマンド追加
+ など
+ 
+2015 12 12
+ 全体を大改革 (README参照)
+2015 12 01
+ main.texの変更: Chapter{はじめに}内部に以下を追記
+ \item どのような（実験）結果が得られたか、アピール（目次案の段階では希望的予測）
+2014 11 20
+ READMEのeps作成方法をMetafileToEPSConverterを追加
+ NGC.styの変更: 変数1つで色指定変更可能に修正
+2012 12 07
+ NGC.styの変更: ChapterのフォントをHugeからLargeに変更
+2010 09 30
+ 元のMakefileとサンプルプログラムを山下先生にもらう

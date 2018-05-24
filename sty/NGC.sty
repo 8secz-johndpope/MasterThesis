@@ -1,0 +1,194 @@
+﻿%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                       %
+%               研究室テンプレートファイル           %
+%                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% memo
+% 文字色の切り替えは，30行目あたり
+% 卒論，修論の切り替えは110-135行目あたり
+
+\usepackage{color}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+
+%%%%%%%%%%%%%%%%%%%%%　　注意事項　　%%%%%%%%%%%%%%%%%%%%%
+%
+%　文字列の色を変える場合：　\色名out{変える文字列}とする。
+%	例：赤色に変えたい場合： \redout{ほげほげ}
+%
+% 文字列の色の変更をキャンセルして黒文字に戻したい場合：　
+%	24行目の「\NGCcolor=0」を「\NGCcolor=1」に書き換える
+%
+% 黒くした文字列にまた色を付けたい場合：　
+%	24行目の「\NGCcolor=1」を「\NGCcolor=0」に書き換える
+%
+%%%%%%%%%%%%%%%%%%%%%　　注意事項　　%%%%%%%%%%%%%%%%%%%%%
+
+% 0でコメント色分け表示 1で黒文字のみの表示
+\newcount\NGCcolor
+\NGCcolor=0
+
+% タイトルに使うフォント
+%\newcommand{\titlefont}{\mcfamily} % 明朝体
+\newcommand{\titlefont}{\bf} %太字
+% \newcommand{\titlefont}{\gtfamily\bf} % ゴシック体、太字
+
+% example. \redout{}, \rout{}で赤文字
+\ifnum\NGCcolor<1
+\newcommand{\rout}[1]{\textcolor{red}{#1}}
+\newcommand{\bout}[1]{\textcolor{blue}{#1}}
+\newcommand{\gout}[1]{\textcolor{green}{#1}}
+\newcommand{\cout}[1]{\textcolor{cyan}{#1}}
+\newcommand{\mout}[1]{\textcolor{magenta}{#1}}
+\newcommand{\yout}[1]{\textcolor{yellow}{#1}}
+
+\newcommand{\redout}[1]{\textcolor{red}{#1}}
+\newcommand{\blueout}[1]{\textcolor{blue}{#1}}
+\newcommand{\greenout}[1]{\textcolor{green}{#1}}
+\newcommand{\cyannout}[1]{\textcolor{cyan}{#1}}
+\newcommand{\magentaout}[1]{\textcolor{magenta}{#1}}
+\newcommand{\yellowout}[1]{\textcolor{yellow}{#1}}
+\else
+\newcommand{\rout}[1]{#1}
+\newcommand{\bout}[1]{#1}
+\newcommand{\gout}[1]{#1}
+\newcommand{\cout}[1]{#1}
+\newcommand{\mout}[1]{#1}
+\newcommand{\yout}[1]{#1}
+
+\newcommand{\redout}[1]{#1}
+\newcommand{\blueout}[1]{#1}
+\newcommand{\greenout}[1]{#1}
+\newcommand{\cyannout}[1]{#1}
+\newcommand{\magentaout}[1]{#1}
+\newcommand{\yellowout}[1]{#1}
+\fi
+
+% 図・表がページ全体を占めても良い割合を少し増やす
+\renewcommand{\topfraction}{0.6} % 上部で占める最大の割合
+\renewcommand{\bottomfraction}{0.6} % 下部で占める最大の割合
+\renewcommand{\textfraction}{0.4} % テキストが占める最小割合
+\renewcommand{\floatpagefraction}{0.6} % 単独になるときの最小割合
+
+% 図と表とキャプションの間
+\setlength{\abovecaptionskip}{1mm}
+\setlength{\belowcaptionskip}{1mm}
+
+% 余白設定
+\topmargin=-5.4mm
+\headheight=12pt
+\headsep=7mm
+\topskip=0mm
+\textheight=235mm
+
+\oddsidemargin=-0.4mm
+\evensidemargin=-0.4mm
+\textwidth=40zw
+
+%% algorithm関連
+% true, falseの定義
+% \algnewcommand\True{\textbf{true}\space}
+\algnewcommand\True{\textbf{true}}
+% \algnewcommand\False{\textbf{false}\space}
+\algnewcommand\False{\textbf{false}}
+
+\makeatletter
+
+% 2カラムでも強制的に1カラムにする環境(begin-end)
+\newenvironment{alwayssingle}{
+  \@restonecolfalse
+  \if@twocolumn\@restonecoltrue\onecolumn
+  \else\if@openright\cleardoublepage\else\clearpage\fi
+  \fi
+}{
+  \if@restonecol\twocolumn
+  \else\newpage\thispagestyle{empty}\fi
+}
+
+% stdnum コマンドを作成
+\newcommand{\stdnum}[1]{\def\@stdnum{#1}}
+% today を上書き
+\renewcommand{\today}{\the\year . \the\month . \the\day }
+% maketitle を上書き
+\renewcommand\maketitle{
+\begin{alwayssingle}
+ \thispagestyle{empty}
+ \centering
+ \vspace*{2cm}
+
+ %%% 修論
+ %%{\titlefont\huge Master Thesis}\vspace{1cm}\\
+ {\titlefont\LARGE \@title\\}
+ \vspace{8.5cm}
+ {\titlefont\Large Auther : \@author}\vspace{0.2cm}\\
+ {\titlefont\Large Student Number : \@stdnum}\vspace{0.2cm}\\
+ {\titlefont\Large Supervisor : Prof. Haruo Noma}\vspace{0.7cm}\\
+ {\titlefont\Large Date : \@date}\vspace{0.7cm}\\
+ % {\titlefont\Large 立命館大学大学院 \hspace*{0.2cm} 情報理工学研究科}\vspace{0.1cm}\\
+ % {\titlefont\Large 博士前期課程 \hspace*{0.2cm} 情報理工学専攻}
+ {\titlefont\Large Ritsumeikan University} \vspace{0.2cm} \\
+ {\titlefont\Large Graduate School of Information Science and Engineering }
+
+ %%% 卒論
+ % {\titlefont\huge 卒業論文}\vspace{1cm}\\
+ % {\titlefont\LARGE \@title\\}
+ % \vspace{9cm}
+ % {\titlefont\Large 氏名：\@author}\vspace{0.3cm}\\
+ % {\titlefont\Large 学籍番号：\@stdnum}\vspace{0.3cm}\\
+ % {\titlefont\Large 指導教員： 教授}\vspace{0.8cm}\\
+ % {\titlefont\Large 提出日：\@date}\vspace{0.8cm}\\
+ % {\titlefont\Large 立命館大学 \hspace*{0.5cm} 情報理工学部 \hspace*{0.5cm} 情報システム学科}
+\end{alwayssingle}
+}
+
+% 目次のフォント
+\renewcommand{\cfttoctitlefont}{\titlefont}
+\renewcommand{\cftchapnumwidth}{3.5em}
+\renewcommand{\cftchapfont}{\titlefont}
+\renewcommand{\cftchappagefont}{\titlefont}
+
+% chapterのフォーマット
+\titleformat{\chapter}
+  [hang] % hang: "第n章" と同じ行, display: 改行する
+  {\normalfont\titlefont\LARGE} % 一度リセット、明朝、サイズ LARGE
+  {\@chapapp\thechapter\@chappos} % '第' 'n' '章'
+  {0.5em} % 0.5 文字開ける
+  {} % 前に何も入れない
+
+% sectionのフォーマット
+\titleformat{\section}
+  {\normalfont\titlefont\Large} % 一度リセット、明朝、サイズ Large
+  {\thesection} % 'n.m'
+  {0.5em} % 0.5 文字開ける
+  {}
+
+% subsectionのフォーマット
+\titleformat{\subsection}
+  {\normalfont\titlefont\large} % 一度リセット、明朝、サイズ Large
+  {\thesubsection} % 'n.m.o'
+  {0.5em} % 0.5 文字開ける
+  {}
+
+% デフォルトの "関連図書" を変更
+\renewcommand{\bibname}{参考文献}
+
+% 図・表のキャプションのフォーマット
+\long\def\@makecaption#1#2{
+  \scriptsize
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1：#2}
+  \ifdim \wd\@tempboxa >\hsize
+    #1: #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip
+}
+
+% 表に使う hline の太線版
+\def\Hline{\noalign{\hrule height 1.5pt}}
+
+\makeatother

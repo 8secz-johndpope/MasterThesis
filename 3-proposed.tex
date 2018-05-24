@@ -1,0 +1,38 @@
+\chapter{ぼこぼこを利用したほげほげ手法}
+この章がメイン．提案手法について説明する．
+
+ここが短いと卒業（修了）させてもらえないらしい．
+
+アルゴリズムの入れ方のサンプルをAlgorithm~\ref{alg:prop}に貼っときます．
+\begin{algorithm}[tbp]
+ \caption{Proposed method using CSPF}\label{alg:prop}
+ \begin{algorithmic}[1]
+  \Require $C$：生成回路となるAQFP論理回路
+  \State $C \gets$ RAND-1を用いてAQFP論理回路に変換された入力回路
+  \State コメント \Comment{ステップ1}
+  \State 行にもラベルを貼れます（参照テスト[\ref{alg:prop:hoge}行目]） \label{alg:prop:hoge}
+
+  \If{あほあほ}
+  \State ifはこんな感じ
+  \State \Return \True
+  \ElsIf{ぼけぼけ}
+  \State \Return \False
+  \EndIf
+
+  \For{$i=1$ to N}
+  \State forはもちろん
+  \EndFor
+
+  \ForAll{外部出力リストのゲート\textit{po}}
+  \State forallや
+  \EndFor
+
+  \Repeat
+  \State リピートも使えます
+  \State $C$内のそれぞれのゲートの出力論理を計算
+  \State OptimizeCircuitUsingCSPF($C$)
+  \Until{$C$の構成に変更なし}
+
+  \State \Return $C$
+ \end{algorithmic}
+\end{algorithm}

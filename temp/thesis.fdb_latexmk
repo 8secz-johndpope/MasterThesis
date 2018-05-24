@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex temp/thesis"] 1527130474 "temp/thesis.aux" "temp/thesis.bbl" "temp/thesis" 1527130475
+["bibtex temp/thesis"] 1527131682 "temp/thesis.aux" "temp/thesis.bbl" "temp/thesis" 1527131820
   "junsrt.bst" 0 -1 0 ""
   "presentation_traing.bib" 1526432795 4067 545e18c4a626ffe7e895e68f76e803bd ""
-  "temp/thesis.aux" 1527130474 1517 9abf9c4be01fda680a4d9d453aa7fd52 ""
+  "temp/thesis.aux" 1527131819 1631 9f921ab0d42c79db1340e83d7d06d179 ""
   "temp/thesis.bcf" 0 -1 0 ""
   (generated)
   "temp/thesis.blg"
   "temp/thesis.bbl"
-["dvipdf"] 1527130474 "temp/thesis.dvi" "temp/thesis.pdf" "temp/thesis" 1527130475
-  "temp/thesis.dvi" 1527130474 17228 2adf0ac42214b30cf02abe1b2a09f645 "latex"
+["dvipdf"] 1527131819 "temp/thesis.dvi" "temp/thesis.pdf" "temp/thesis" 1527131820
+  "temp/thesis.dvi" 1527131819 19992 3b04c1a7992779b3f0d73011b053ad66 "latex"
   (generated)
   "temp/thesis.pdf"
-["latex"] 1527130474 "thesis.tex" "temp/thesis.dvi" "thesis" 1527130475
+["latex"] 1527131818 "thesis.tex" "temp/thesis.dvi" "thesis" 1527131820
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm" 1136768653 2124 2601a75482e9426d33db523edf23570a ""
@@ -57,6 +57,7 @@
   "/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd" 1137110629 329 aee7226812ba4138ac67a018466b488d ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ptm.fd" 1137110629 774 61d7da1e9f9e74989b196d147e623736 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd" 1137110629 619 96f56dc5d1ef1fe1121f1cfeec70ee0c ""
+  "/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/block.tss" 1458858524 1410 f5fabf556740993e1391ddd9561033c8 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty" 1458858524 37387 afa86533e532701faf233f3f592c61e0 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty" 1367531278 34706 345df874e59e023274392bd0cf090d66 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty" 1454284088 1617 820bc46185ca5aeeda2ecc6c21866b18 ""
@@ -65,18 +66,19 @@
   "/usr/local/texlive/2016/texmf.cnf" 1463979140 577 2938757e76f31531e65cc647e3507693 ""
   "0-abstract.tex" 1527130142 162 721ec83d3dc4947bddb83dc51fe827a4 ""
   "1-introduction.tex" 1527130473 2448 59e0bcc5ae0a93d943af5be010d34e88 ""
-  "2-preparation.tex" 1526429737 204 e3e839be3ecea950abb0c050a1a00533 ""
-  "3-proposed.tex" 1456936220 1213 c51fde24bed3f731819e0a7005e77eb4 ""
-  "4-experiment.tex" 1526431625 1473 825b87a2e2b3c8c5e88f2d80b4787a15 ""
-  "5-conclusion.tex" 1455774430 692 9eb413c382f097db0339c93a79fb2589 ""
-  "6-acknowledgement.tex" 1526431852 1485 81c5b51a8a081d7ef80d5db09cfb1750 ""
-  "sty/NGC.sty" 1527130388 6325 4b469cca8ed753a5f5a901033712ab6a ""
-  "temp/thesis.aux" 1527130474 1517 9abf9c4be01fda680a4d9d453aa7fd52 ""
-  "temp/thesis.bbl" 1527130474 456 6e7d58fe025c2940eaa79852ae328129 "bibtex temp/thesis"
-  "temp/thesis.lof" 1527130474 100 4353d675f6b597e3aa3d5147c8369dec ""
-  "temp/thesis.lot" 1527130474 173 efaf30e1a203961ffb11add4840870b1 ""
-  "temp/thesis.toc" 1527130474 544 5e7a62c883b1fea88333d165b3012500 ""
-  "thesis.tex" 1527129951 1023 98e3584a1a615c95f0dd7034ec795ac1 ""
+  "1.2-relatedwork.tex" 1527131506 2418 134432a8183310525739f4a3b3a51867 ""
+  "2-preparation.tex" 1527131373 169 e7c4d19fd5a4b6ff265c683f05dc4bcd ""
+  "3-proposed.tex" 1527131319 1184 deb6e2de38fae0460c54831f6822abab ""
+  "4-experiment.tex" 1527130854 1442 445c0af7341ac42a383619886b22f761 ""
+  "5-conclusion.tex" 1527130915 706 eb147fab0dcf0fa561bb83a4e53d6cc7 ""
+  "6-acknowledgement.tex" 1527130878 1494 7baad84fa126fc8ddcdad681ab51517a ""
+  "sty/NGC.sty" 1527131817 6451 68c8d056dd74e20e7b4628b8540a08e8 ""
+  "temp/thesis.aux" 1527131819 1631 9f921ab0d42c79db1340e83d7d06d179 ""
+  "temp/thesis.bbl" 1527131682 456 6e7d58fe025c2940eaa79852ae328129 "bibtex temp/thesis"
+  "temp/thesis.lof" 1527131819 120 4b5392bf4295ae9f4473a7a4fff7fdc5 ""
+  "temp/thesis.lot" 1527131819 193 5b630469e5a0f3d33852b846c4bb55ec ""
+  "temp/thesis.toc" 1527131819 518 0f9340c9b8d5dbf3a5df1ab6ab98a7f1 ""
+  "thesis.tex" 1527131455 1047 f2c79bfd3e6831e27b4371a5f9aa9e61 ""
   (generated)
   "temp/thesis.toc"
   "temp/thesis.dvi"

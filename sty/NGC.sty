@@ -156,6 +156,9 @@
 %   {\@chapapp\thechapter\@chappos} % '第' 'n' '章'
 %   {0.5em} % 0.5 文字開ける
 %   {} % 前に何も入れない
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+\titlespacing*{\chapter}{0pt}{-19pt}{0pt}
 
 % sectionのフォーマット
 \titleformat{\section}
@@ -172,7 +175,7 @@
   {}
 
 % デフォルトの "関連図書" を変更
-\renewcommand{\bibname}{参考文献}
+\renewcommand{\bibname}{References}
 
 % 図・表のキャプションのフォーマット
 \long\def\@makecaption#1#2{

@@ -1,0 +1,16 @@
+*~
+*#
+.*#
+*.swp
+*.swo
+.DS_Store
+
+thesis.aux
+thesis.bbl
+thesis.blg
+thesis.dvi
+thesis.lof
+thesis.log
+thesis.lot
+thesis.pdf
+thesis.toc

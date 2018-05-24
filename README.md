@@ -1,8 +1,5 @@
 # 修論のサンプル
 
-s1さんの修論を元に作成されています
-http://192.168.100.21/gitbucket/git/utisam/masters-thesis.git
-
 がんばれ。
 LINUXで書くことを想定しています。
 

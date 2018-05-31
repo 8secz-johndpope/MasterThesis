@@ -55,8 +55,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/block.tss
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/titlesec/block.tss
 INPUT temp/thesis.aux
 INPUT temp/thesis.aux
 OUTPUT temp/thesis.aux
@@ -122,14 +120,13 @@ INPUT 1-introduction.tex
 INPUT 1-introduction.tex
 INPUT 1.2-relatedwork.tex
 INPUT 1.2-relatedwork.tex
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT 2-preparation.tex
 INPUT 2-preparation.tex
 INPUT 3-proposed.tex
 INPUT 3-proposed.tex
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT 4-experiment.tex
 INPUT 4-experiment.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
@@ -137,6 +134,9 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT 5-conclusion.tex
 INPUT 5-conclusion.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT 6-acknowledgement.tex
 INPUT 6-acknowledgement.tex
 INPUT temp/thesis.bbl

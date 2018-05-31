@@ -10,7 +10,7 @@
 
 \usepackage{color}
 \usepackage{indentfirst}
-\usepackage{titlesec}
+\usepackage[sf,sl,outermarks]{titlesec}
 \usepackage[titles]{tocloft}
 
 %%%%%%%%%%%%%%%%%%%%%　　注意事項　　%%%%%%%%%%%%%%%%%%%%%
@@ -148,6 +148,7 @@
 % \renewcommand{\cftchapnumwidth}{3.5em}
 % \renewcommand{\cftchapfont}{\titlefont}
 % \renewcommand{\cftchappagefont}{\titlefont}
+ \renewcommand{\contentsname}{CONTENTS}
 
 % chapterのフォーマット
 % \titleformat{\chapter}
@@ -156,9 +157,11 @@
 %   {\@chapapp\thechapter\@chappos} % '第' 'n' '章'
 %   {0.5em} % 0.5 文字開ける
 %   {} % 前に何も入れない
-\titleformat{\chapter}[block]
-{\normalfont\huge\bfseries}{\thechapter.}{0.5em}{\Huge}
+
+ \titleformat{\chapter}
+ {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
 \titlespacing*{\chapter}{0pt}{-19pt}{20pt}
+
 
 % sectionのフォーマット
 \titleformat{\section}

@@ -29,6 +29,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/algorithms/algorithm.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/algorithms/algorithm.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
@@ -41,6 +43,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT sty/NGC.sty
 INPUT sty/NGC.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
@@ -118,6 +122,11 @@ INPUT temp/thesis.lot
 OUTPUT temp/thesis.lot
 INPUT 1-introduction.tex
 INPUT 1-introduction.tex
+INPUT ./img/Introduction.png
+INPUT extractbb -O ./img/Introduction.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT 1.2-relatedwork.tex
 INPUT 1.2-relatedwork.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
@@ -125,18 +134,30 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT 2-preparation.tex
 INPUT 2-preparation.tex
-INPUT 3-proposed.tex
-INPUT 3-proposed.tex
-INPUT 4-experiment.tex
-INPUT 4-experiment.tex
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT 5-conclusion.tex
-INPUT 5-conclusion.tex
+INPUT ./img/keypoints_openpose.png
+INPUT extractbb -O ./img/keypoints_openpose.png
+INPUT ./img/eft.png
+INPUT extractbb -O ./img/eft.png
+INPUT ./img/paf.png
+INPUT extractbb -O ./img/paf.png
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT ./img/OpenPoseArchitecture.png
+INPUT extractbb -O ./img/OpenPoseArchitecture.png
+INPUT ./img/jfk.png
+INPUT extractbb -O ./img/jfk.png
+INPUT ./img/kinect.png
+INPUT extractbb -O ./img/kinect.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT 3-proposed.tex
+INPUT 3-proposed.tex
+INPUT 4-experiment.tex
+INPUT 4-experiment.tex
+INPUT 5-conclusion.tex
+INPUT 5-conclusion.tex
 INPUT 6-acknowledgement.tex
 INPUT 6-acknowledgement.tex
 INPUT temp/thesis.bbl

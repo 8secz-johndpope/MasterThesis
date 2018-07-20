@@ -2,32 +2,48 @@
 本章では，提案した○○手法を○○に適用した実験結果とその考察を示す．
 
 \section{Method}
-評価方法が細かい説明が要る場合は，節を分けて方法だけを説明するのもあり．
-節を分けるほどでなければ，実験したマシン，環境，などについて1から２段落で説明する．
-
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline
+ &  & \multicolumn{3}{c|}{1st} & \multicolumn{3}{c|}{2nd} \\ \cline{2-8} 
+\multirow{-2}{*}{\#} & Evaluator number & 1 & 2 & 3 & 1 & 2 & 3 \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}{\color[HTML]{333333} \textbf{Postural behaviors}}} \\ \hline
+-1 & Hands in pockets & 1 &  &  &  &  &  \\ \hline
+-1 & Lean backward &  &  &  &  &  &  \\ \hline
+1 & Lean forward & 1 &  &  &  &  & 1 \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Whole body movement}} \\ \hline
+-1 & Too much movement &  &  &  &  &  &  \\ \hline
+-1 & Too little movement & 1 & 1 & 1 &  &  &  \\ \hline
+-1 & Step backward &  &  &  &  &  &  \\ \hline
+1 & Step forward &  &  &  &  &  &  \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Vocal behaviors}} \\ \hline
+-1 & Speak too fast &  &  &  &  &  &  \\ \hline
+-1 & Unsuitable pause &  &  & 7 &  &  & 2 \\ \hline
+1 & Suitable pause & 1 &  &  & 2 & 1 &  \\ \hline
+1 & Vocal emphasis & 1 &  &  &  &  &  \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Behaviors of eye contact}} \\ \hline
+1 & Make eye contact &  &  &  & 3 & 1 & 1 \\ \hline
+-1 & Contact avoidance & 1 & 1 & 1 &  &  &  \\ \hline
+-1 & Look up to ceiling &  & 1 &  &  &  &  \\ \hline
+-1 & Look down to floor &  &  &  &  &  & 1 \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Facial expression}} \\ \hline
+1 & Smile &  &  &  & 3 &  & 1 \\ \hline
+-1 & Flat face & 1 & 1 & 1 &  &  &  \\ \hline
+\multicolumn{8}{|l|}{\cellcolor[HTML]{F2F2F2}\textbf{Hand gesture}} \\ \hline
+1 & Hand gesture occur &  & 2 &  & 5 & 5 & 1 \\ \hline
+-1 & Too little gestures & 1 &  & 1 &  &  &  \\ \hline
+-1 & Too much gestures &  &  &  &  &  &  \\ \hline
+\multicolumn{2}{|l|}{\textbf{Point of each evaluator}} & -2 & -2 & 3 & 13 & 7 & 1 \\ \hline
+\multicolumn{2}{|l|}{\textbf{Average Point}} & \multicolumn{3}{c|}{-5} & \multicolumn{3}{c|}{7} \\ \hline
+\end{tabular}
+\end{table}
 \section{Results}
 
-結果を表\ref{table:result_bench1}に示す．
-
-表の例：たての罫線（外側）を使わないのが格好いいらしい．
-
-\begin{table}[tbp]
-\caption{分析結果1}
-\begin{tabular}{l|r|r|r|r} \Hline
- & \multicolumn{1}{l|}{gcc} & \multicolumn{1}{l|}{li} & \multicolumn{1}{l|}{m88ksim} & \multicolumn{1}{l}{go} \\\hline
-収束回数 & 4346  & 5930  & 2595  & 3545  \\\hline
-総保存命令数 & 50711  & 72519  & 28562  & 81305  \\\hline
-再利用可能な総命令数 & 47366  & 59178  & 28277  & 78317  \\\hline
-平均再利用可能命令数 & 10.90  & 12.30  & 10.90  & 22.09  \\\hline
-保存した命令が一部, 再利用できない回数 & 363  & 1350  & 35  & 349  \\\hline
-\end{tabular}
-\label{table:result_bench1}
-\end{table}
-
-
-以上の結果より以下のことが言える．
-実験結果の後は，考察を分かりやすくまとめる．箇条書きを使ってもよい．
-
-*すぐに導かれる将来の課題はここに書いてしまっても良い．そして，「おわりに」に
-再度書いてもOK
 \section{Discussion}

@@ -73,8 +73,8 @@
 \renewcommand{\floatpagefraction}{0.6} % 単独になるときの最小割合
 
 % 図と表とキャプションの間
-\setlength{\abovecaptionskip}{1mm}
-\setlength{\belowcaptionskip}{1mm}
+\setlength{\abovecaptionskip}{2mm}
+\setlength{\belowcaptionskip}{2mm}
 
 % 余白設定
 \topmargin=-5.4mm
@@ -179,6 +179,20 @@
 
 % デフォルトの "関連図書" を変更
 \renewcommand{\bibname}{References}
+
+%插图简化
+\NewDocumentCommand\munepsfig{O{scale=1.0}mom}
+{% 
+\begin{figure}[!htbp] 
+  \centering 
+  \vspace{2mm} 
+  \includegraphics[#1]{./img/#2.png}
+  \IfNoValueTF {#3}
+    {\caption{#4}}
+    {\caption[#3]{#4}} 
+  \label{fig:#2} 
+\end{figure}%
+}
 
 % 図・表のキャプションのフォーマット
 \long\def\@makecaption#1#2{

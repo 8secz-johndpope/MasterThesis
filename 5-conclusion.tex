@@ -1,14 +1,12 @@
 \chapter{Conclusion}
-本研究では，○○という手法において，○○保存する命令を，分岐の信頼性を用いて限定する手法を提案した．
-（略）
-その結果，再利用できない無駄な命令の保存を，最大で95\%削減することができた．
-今後は，さらに○○の部分を改良することにより削減割合をさらに向上させることが課題である．
+\par In this paper, we propose a presentation training system that allows the trainee to imitate past famous speech to improve their presentation skills. 
+\par In advance, we employed OpenPose library\cite{cao2017realtime} to extract orators' motion data from past famous speech 2D video. OpenPose is a library for real-time multi-person key-point detection, which can extract 2D coordinates from 2D image or video. We select the John F.Kennedy's \emph{We choose to go to the Moon} as our target video. In this speech, he used some gestures to stress his words and used some suitable pause to make speech more impressive. We think it's a suitable speech for our proposed system.
+We select eight kinds of joint as our target joints because most behaviors showed in our target speech are the behaviors of the upper half of the body. 
+\par While training, the system capture the trainee's motion in real-time using a Microsoft Kinect camera (Kinect for short). The Kinect can extract 25 kinds of joint's 3D coordinates from a human body. We only employ eight kinds of joint's 2D coordinates to pair the joints which extracted by OpenPose from famous past speech. 
+\par Then, we employ a template algorithm to compare the trainee's speech with the famous past speech. We choose the cosine similarity of adjacent limbs as the feature to calculate the score that shows the similarity of the trainees' motion and the motion of extracted orators.
+\par Finally, the system gives the trainee visual feedback to make the training more effective. In training, the trainee will wear an HMD (Oculus Rift) that shows a virtual hall and some virtual audience. The audience will perform some actions according to the score in real-time. For example, when the trainee gets a high score, the audience will applaud for the trainee.
 
-ここまできたら，力尽きそうですが，力を振り絞って，
-\begin{itemize}
-\item 本論文の概要と特徴
-\item 得られた成果
-\item それから得られる最終結論
-\item 残された課題
-\end{itemize}
-は書いてください．
+\par We made two experiments to verify the effectiveness of our algorithm and system. In the first experiment, we proved that our algorithm can compare the trainee's motion and the orator's motion of past famous speech. In the second experiment, we made an A/B test to verify will imitating past famous speech by our proposed system can improve trainee's presentation skill. The experiment result shows that the trainee perform better after training. From the interview and the recorded video, we find that imitating past famous speech let the trainee use more gestures and eye contact in their presentation. It shows the effectiveness of our proposed system.
+
+\par In our present system, we only employ upper body's gestures to judge the trainee's presentation. However, we also consider some other behaviors in experiment such like whole body movement, vocal behaviors and postural behaviors. Those behaviors are also important because there are many kinds of style of presentation. Some speech like inaugural speech or congress speech need the speaker stand behind an podium and can't move a lot. In the other speech like TED or conference, the speaker can move in the stage and make more interaction with the audience. 
+\par In future, we would like to consider more behaviors such as eye contact, whole body movement and vocal behaviors in our proposed system. We also need to improve our algorithm and feedback for more effective training. 

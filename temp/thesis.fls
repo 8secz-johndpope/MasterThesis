@@ -53,6 +53,18 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/bm.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -64,6 +76,12 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/CaseFolding.tx
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/unicode-data/SpecialCasing.txt
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3dvipdfmx.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/latexsym.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/latexsym.sty
 INPUT sty/NGC.sty
 INPUT sty/NGC.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/indentfirst.sty
@@ -126,6 +144,11 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy9.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy7.tfm
 OUTPUT temp/thesis.toc
 INPUT temp/thesis.lof
 INPUT temp/thesis.lof
@@ -176,19 +199,140 @@ INPUT ./img/kinect.png
 INPUT extractbb -O ./img/kinect.png
 INPUT ./img/kinectskeleton.png
 INPUT extractbb -O ./img/kinectskeleton.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT ./img/skeletaltracking.png
 INPUT extractbb -O ./img/skeletaltracking.png
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT 3-proposed.tex
 INPUT 3-proposed.tex
+INPUT ./img/systemoverview.png
+INPUT extractbb -O ./img/systemoverview.png
+INPUT ./img/pastspeech.png
+INPUT extractbb -O ./img/pastspeech.png
+INPUT ./img/joint.png
+INPUT extractbb -O ./img/joint.png
+INPUT ./img/wechosetogotothemoon.png
+INPUT extractbb -O ./img/wechosetogotothemoon.png
+INPUT ./img/jfk.png
+INPUT ./img/json.png
+INPUT extractbb -O ./img/json.png
+INPUT ./img/jfknohands.png
+INPUT extractbb -O ./img/jfknohands.png
+INPUT ./img/jfkwrong.png
+INPUT extractbb -O ./img/jfkwrong.png
+INPUT ./img/jsoneditor.png
+INPUT extractbb -O ./img/jsoneditor.png
+INPUT ./img/jointmap.png
+INPUT extractbb -O ./img/jointmap.png
+INPUT ./img/pipeline.png
+INPUT extractbb -O ./img/pipeline.png
+INPUT ./img/pipeline2.png
+INPUT extractbb -O ./img/pipeline2.png
+INPUT ./img/limbvector.png
+INPUT extractbb -O ./img/limbvector.png
+INPUT ./img/limbangle.png
+INPUT extractbb -O ./img/limbangle.png
+INPUT ./img/systemui.png
+INPUT extractbb -O ./img/systemui.png
+INPUT ./img/socket.png
+INPUT extractbb -O ./img/socket.png
+INPUT ./img/visualfeedback.png
+INPUT extractbb -O ./img/visualfeedback.png
 INPUT 4-experiment.tex
 INPUT 4-experiment.tex
+INPUT ./img/zong.png
+INPUT extractbb -O ./img/zong.png
+INPUT ./img/student1.png
+INPUT extractbb -O ./img/student1.png
+INPUT ./img/method.png
+INPUT extractbb -O ./img/method.png
+INPUT ./img/slide.png
+INPUT extractbb -O ./img/slide.png
+INPUT ./img/score_a1.png
+INPUT extractbb -O ./img/score_a1.png
+INPUT ./img/GA.png
+INPUT extractbb -O ./img/GA.png
+INPUT ./img/result_a.png
+INPUT extractbb -O ./img/result_a.png
+INPUT ./img/GB.png
+INPUT extractbb -O ./img/GB.png
+INPUT ./img/result_b.png
+INPUT extractbb -O ./img/result_b.png
+INPUT ./img/before_a2.png
+INPUT extractbb -O ./img/before_a2.png
+INPUT ./img/after_a2.png
+INPUT extractbb -O ./img/after_a2.png
+INPUT ./img/score_a2.png
+INPUT extractbb -O ./img/score_a2.png
+INPUT ./img/part_a4.png
+INPUT extractbb -O ./img/part_a4.png
 INPUT 5-conclusion.tex
 INPUT 5-conclusion.tex
 INPUT 6-acknowledgement.tex
 INPUT 6-acknowledgement.tex
 INPUT temp/thesis.bbl
 INPUT temp/thesis.bbl
+INPUT appendix.tex
+INPUT appendix.tex
+INPUT ./img/sa1.png
+INPUT extractbb -O ./img/sa1.png
+INPUT ./img/sa2.png
+INPUT extractbb -O ./img/sa2.png
+INPUT ./img/sa3.png
+INPUT extractbb -O ./img/sa3.png
+INPUT ./img/sa4.png
+INPUT extractbb -O ./img/sa4.png
+INPUT ./img/sa5.png
+INPUT extractbb -O ./img/sa5.png
+INPUT ./img/sb1.png
+INPUT extractbb -O ./img/sb1.png
+INPUT ./img/sb2.png
+INPUT extractbb -O ./img/sb2.png
+INPUT ./img/sb3.png
+INPUT extractbb -O ./img/sb3.png
+INPUT ./img/sb4.png
+INPUT extractbb -O ./img/sb4.png
+INPUT ./img/sb5.png
+INPUT extractbb -O ./img/sb5.png
 INPUT temp/thesis.aux

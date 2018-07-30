@@ -1,4 +1,5 @@
 \chapter{Preparation Work for Proposed System}
+\label{chapter:preparation}
 
 \par In this chapter, we will introduce some preparation work for the proposed system. At first, we employed the OpenPose library \cite{cao2017realtime} to extract the orator's joint data from past speech 2D video, and we will introduce the OpenPose library in section 1. Then we set up a Microsoft Kinect for Windows Version device \cite{Shotton2011} to extract the trainee's joint data in training, and we will introduce the Kinect camera in section 2. To evaluate the effectiveness of the proposed system, we need to know how to evaluate a presentation, and we will introduce some evaluation points of a presentation.
 
@@ -11,7 +12,7 @@ We employed the OpenPose library to extract the orator's joint data from 2D spee
 \end{figure}
 
 \subsection*{Convolutional Pose Machine (CPM)}
- \par Convolutional Pose Machine (CPM) use Convolutional Neural Networks (CNNs) to detect the human joint data from 2D image or video. CPMs consist of a sequence of convolutional networks that repeatedly produce 2d belief maps for the location of each part (Figure \ref{fig:eft}). At each stage, image features and belief maps produced by the previous stage are used as input \cite{Wei2016}.
+ \par Convolutional Pose Machine (CPM) use Convolutional Neural Networks (CNNs) to detect the human joint data from 2D image or video. CPMs consist of a sequence of convolutional networks that repeatedly produce 2D belief maps for the location of each part (Figure \ref{fig:eft}). At each stage, image features and belief maps produced by the previous stage are used as input \cite{Wei2016}.
 
 \begin{figure}[htbp]
 \centering\includegraphics[width=0.9\textwidth]{./img/eft.png}
@@ -23,55 +24,57 @@ We employed the OpenPose library to extract the orator's joint data from 2D spee
 \par In order to capture long-range interactions between parts, the design of the network in each stage of our sequential prediction framework is motivated by the goal of achieving a large receptive field on both the image and the belief maps \cite{Wei2016}.
 
 \subsection*{OpenPose}
-\par Based on CPM architecture, OpenPose is an efficient method for multi-person pose estimation what uses a non-parametric representation of association scores via Part Affinity Fields (PAFs), a set of 2d vectors field that encodes the location and orientation of limbs over the image domain.
-\par The part affinity is a 2d vector field for each limb for each pixel in the area belonging to a particular limb, which encodes the direction that points from one part of the limb to the other. Each type of limb has a corresponding affinity field jointing its two associated body parts. A greedy parsing algorithm is sufficient to produce high-quality parses of body poses, which maintains efficiency even as the number of people in the image increase \cite{cao2017realtime}.
+\par Based on CPM architecture, OpenPose is an efficient method for multi-person pose estimation what uses a non-parametric representation of association scores via Part Affinity Fields (PAFs), a set of 2D vectors field that encodes the location and orientation of limbs over the image domain.
+\par The part affinity is a 2D vector field for each limb for each pixel in the area belonging to a particular limb, which encodes the direction that points from one part of the limb to the other. Each type of limb has a corresponding affinity field jointing its two associated body parts. A greedy parsing algorithm is sufficient to produce high-quality parses of body poses, which maintains efficiency even as the number of people in the image increase \cite{cao2017realtime}.
 \par Figure \ref{fig:paf} illustrates the overall pipeline of OpenPose library.
 
 \begin{figure}[htbp]
-\centering\includegraphics[scale=0.325]{./img/paf.png}
+  \centering\includegraphics[width=0.8\textwidth]{./img/paf.png}
   \caption[Overall pipeline of OpenPose]{Overall pipeline of OpenPose \cite{cao2017realtime}}\label{fig:paf}
 \end{figure}
 
 \begin{itemize}
-\item OpenPose takes, as input, a color image of size of $w \times h$ (Fig \ref{fig:paf}a) and produces, as output, the 2d locations of anatomical key-points for each person in the image (Fig \ref{fig:paf}e) \cite{cao2017realtime}.
-\item First, a feed-forward network simultaneously predicts a set of 2d confidence maps of body part locations (Fig \ref{fig:paf}b) and a set of 2d vector fields of part affinities, which encode the degree of association between parts (Fig \ref{fig:paf}c).
-\item Finally, the confidence maps and the affinity fields are parsed by greedy inference (Fig \ref{fig:paf}d) to output the 2d keypoints for all people in the image.
+\item OpenPose takes, as input, a color image of size of $w \times h$ (Figure \ref{fig:paf}a) and produces, as output, the 2D locations of anatomical key-points for each person in the image (Figure \ref{fig:paf}e) \cite{cao2017realtime}.
+\item First, a feed-forward network simultaneously predicts a set of 2D confidence maps of body part locations (Figure \ref{fig:paf}b) and a set of 2D vector fields of part affinities, which encode the degree of association between parts (Figure \ref{fig:paf}c).
+\item Finally, the confidence maps and the affinity fields are parsed by greedy inference (Figure \ref{fig:paf}d) to output the 2D keypoints for all people in the image.
 \end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering\includegraphics[width=0.9\textwidth]{./img/OpenPoseArchitecture.png}
   \caption[Architecture of the two-branch multi-stage CNN in OpenPose]{Architecture of the two-branch multi-stage CNN in OpenPose \cite{cao2017realtime}}\label{fig:architecture}
 \end{figure}
 
 \par The architecture of OpenPose, shown in Figure \ref{fig:architecture}, simultaneously predicts detection confidence maps and affinity fields that encode part-to-part association. The network is split into two branches: the top branch, shown in beige, predicts the confidence maps, and the bottom branch, shown in blue, predicts the affinity fields. Each branch is an iterative prediction architecture, Following the typical structure of a CMP, which refines the predictions over successive stages, with intermediate supervision at each stage.
 
-\par In our proposed system, we employed OpenPose library to extract the orator's joint data from past famous 2D speech video (Fig \ref{fig:jfk}). We use those joint data to do template matching to get the score.
-\begin{figure}[htbp]
+\par In our proposed system, we employed OpenPose library to extract the orator's joint data from past famous 2D speech video (Figure \ref{fig:jfkexample}). We use those joint data to do template matching to get the score.
+\begin{figure}[!htbp]
   \centering\includegraphics[width=0.9\textwidth]{./img/jfk.png}
-  \caption{Joint detected by OpenPose (Example)}\label{fig:jfk}
+  \caption{Joint detected by OpenPose (Example)}\label{fig:jfkexample}
 \end{figure}
 
 
 
 \section{Joint Data Extraction Method (3D)}
 \par Recent advances in 3D depth cameras such as Microsoft Kinect sensors have created many opportunities for multimedia computing. The Kinect sensor lets the computer directly sense the third dimension (depth) of the players and the environment. It also understands when users talk, knows who they are when they walk up to it and can interpret their movements and translate them into a format that developers can use to build new experiences \cite{Zhang2012}.
-\subsection*{Kinect v2 Sensor}
-\par The Kinect v2 sensor incorporates several advanced sensing hardware. Most notably, it contains a depth sensor, a color camera, and a microphone array that provide full-body 3D motion capture, facial recognition, and voice recognition capabilities.Figure \ref{fig:kinect} shows the arrangement of the infrared (IR) camera, the color camera, and the IR illuminator. . 
+\subsection*{Kinect V2 Sensor}
+\par The Kinect V2 sensor incorporates several advanced sensing hardware. Most notably, it contains a depth sensor, a color camera, and a microphone array that provide full-body 3D motion capture, facial recognition, and voice recognition capabilities.Figure \ref{fig:kinect} shows the arrangement of the infrared (IR) camera, the color camera, and the IR illuminator. . 
 
 \begin{figure}[htbp]
   \centering\includegraphics[width=0.7\textwidth]{./img/kinect.png}
-  \caption[Microsoft Kinect v2 Sensor]{Microsoft Kinect v2 Sensor \cite{Fankhauser2015}}\label{fig:kinect}
+  \caption[Microsoft Kinect V2 sensor]{Microsoft Kinect V2 sensor \cite{Fankhauser2015}}\label{fig:kinect}
 \end{figure}
 
-\par The Kinect v2 depth sensor is based on the time-of-flight measurement principle. A strobe infrared light (see Figure \ref{fig:kinect}) illuminates the scene, the light is reflected by obstacles, and the time of flight for each pixel is registered by the infrared camera. Internally, wave modulation and phase detection is used to estimate the distance to obstacles (indirect ToF). Details on the depth measurement method of the Kinect v2 are given in \cite{Sell}.
+\par The Kinect V2 depth sensor is based on the time-of-flight measurement principle. A strobe infrared light (see Figure \ref{fig:kinect}) illuminates the scene, the light is reflected by obstacles, and the time of flight for each pixel is registered by the infrared camera. Internally, wave modulation and phase detection is used to estimate the distance to obstacles (indirect ToF). Details on the depth measurement method of the Kinect V2 are given in \cite{Sell}.
 
 \subsection*{Kinect Skeletal Tracking}
 \par In skeletal tracking, a human body is represented by some joints representing body parts such as head, neck, shoulders, and arms (see Figure \ref{fig:skeletonmap}). Each joint is represented by its 3D coordinates.
 
 \begin{figure}[htbp]
   \centering\includegraphics[width=0.8\textwidth]{./img/kinectskeleton.png}
-\caption{Microsoft Kinect V2 Joint Id Map}\label{fig:skeletonmap}
+  \caption[Microsoft Kinect V2 joint id map]{Microsoft Kinect V2 joint id map \footnotemark}\label{fig:skeletonmap}
 \end{figure}
+
+\footnotetext{https://vvvv.org/documentation/kinect}
 
 \par Figure \ref{fig:trackingpipeline} illustrates the whole pipeline of Kinect skeletal tracking. The first step is to perform per-pixel, body-part classification. The second step is to hypothesize the body joints by finding a global centroid of probability mass through the mean shift. The final stage is to map hypothesized joints to the skeletal joints and fit a skeleton by considering both temporal continuity and prior knowledge from skeletal train data.
 
@@ -147,7 +150,7 @@ We employed the OpenPose library to extract the orator's joint data from 2D spee
 }
 \end{table}
 \newpage
-\par The observed behaviors can be separated based on the nonverbal channels that they were generated: (1) Posture (the static configuration of body), (2) Voice (concerning the paralinguistic characteristics), (3) Eye contact, (4) Facial Expression, (5) Globe body movement, (6) Hand gesture. This method of categorization is similar to the literature of public speaking skills \cite{rodman1996style}. From their observation, as well as advices from the expert, the following aspects are the most important:
+\par The observed behaviors can be separated based on the nonverbal channels that they were generated: (1) Posture (the static configuration of body), (2) Voice (concerning the paralinguistic characteristics), (3) Eye contact, (4) Facial Expression, (5) Globe body movement, (6) Hand gesture. This method of categorization is similar to the literature of public speaking skills \cite{rodman1996style}. From Nguyen's observation, as well as advices from the expert, they find the following aspects are the most important:
 
 \begin{itemize}
   \item \textit{Eye Contact} : Similar to social interaction, maintaining good eye contact is the first thing the presenters must keep in mind. It initiates and strengthens the connection between them and the audience (\#18, 19 in Table \ref{tab:nonverbal cues}). It might have the first and foremost influence to the performance of a presentation, as well as regular communications \cite{Zimmerman2009}.
@@ -156,7 +159,7 @@ We employed the OpenPose library to extract the orator's joint data from 2D spee
 
 \end{itemize}
 
-\par In order to evaluate the effectiveness of our proposed system, we selected 20 import cues from Nguyen's research and did an experiment. We make a evaluate sheet like table \ref{tab:evalutioncues} to evaluate the presentation skills of the trainees before and after the training. We will explain the details about our experiment in chapter 5.
+\par In order to evaluate the effectiveness of our proposed system, we need select some import cues from Nguyen's research. We made a previous experiment, in which we let the evaluator score the trainee's presentation by all 35 cues. However, We find it's too hard for evaluator to score by all those cues. So we select 20 most occurred cues, and we make a evaluate sheet like table \ref{tab:evalutioncues} to evaluate the presentation skills of the trainees before and after the training. We will explain the details about our experiment in chapter 5.
 
 \begin{table}[]
 \centering

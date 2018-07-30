@@ -11,7 +11,7 @@
 \par In this paper, we propose a presentation training system that allows the trainee to imitate past famous speech to improve their nonverbal behaviors. Nonverbal behaviors include many aspects, and we choose to analyze the gesture of orators as the nonverbal behavior in this paper. In advance, we employed OpenPose library\cite{cao2017realtime} to extract orators' motion data from past famous speech 2D video. While training, the system capture the trainee's motion in real-time using Microsoft Kinect. We choose the cosine similarity of adjacent limbs as the feature to calculate the score that shows the similarity of the trainees' motion and the motion of extracted orators. The trainees will also wear an HMD that show a virtual hall and some virtual audience. The audience will perform some actions according to the score.
 \begin{figure}[htbp]
 \centering\includegraphics[scale=0.225]{./img/Introduction.png}
-\caption{System Introduction}\label{fig:System Introduction}
+\caption{System introduction}\label{fig:System introduction}
 \end{figure}
 
 \par The rest of this paper is organized as follows. First we will introduce some existing presentation training method and proposed solution in the chapter 2. Then we will introduce the preparation about OpenPose, Kinect and the Evaluation of presentation in the chapter3. The chapter 4 describes our proposed system in detail. In the chapter 5, we will evaluate the system and discuss the results. The last chapter is for conclusions and future works.

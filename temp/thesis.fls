@@ -165,9 +165,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT 1.2-relatedwork.tex
 INPUT 1.2-relatedwork.tex
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT ./img/sensei.png
 INPUT extractbb -O ./img/sensei.png
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -177,6 +174,9 @@ INPUT ./img/onlinefeedback.png
 INPUT extractbb -O ./img/onlinefeedback.png
 INPUT ./img/offlinefeedback.png
 INPUT extractbb -O ./img/offlinefeedback.png
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT ./img/senseisystem.png
 INPUT extractbb -O ./img/senseisystem.png
 INPUT ./img/nguyensystem.png

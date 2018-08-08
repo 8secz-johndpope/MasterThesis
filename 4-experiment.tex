@@ -2,17 +2,17 @@
 \section{Evaluation of the Algorithm Effectiveness}%
 \label{sec:evaluation_of_the_system_effectiveness}
 
-\par In order to verify the effectiveness of the matching algorithm, we make a simple experiment.
+\par To verify the effectiveness of the matching algorithm, we make a simple experiment.
 \subsection*{Method}
-\par  We let a orator record a simple video instead of past famous speech which includes some common nonverbal behaviors. The video has 12 seconds (360 frames) that include 5 kinds of nonverbal behaviors such as wave hand. We recruited three subjects and introduced the system briefly, then showed them the video once. Then let them imitate the video one by one for three times and record the score. For reference, we also let the orator imitate the same video, the orator can imitate exactly and get a high score.
+\par  We let an orator record a simple video instead of past famous speech which includes some common nonverbal behaviors. The video has 12 seconds (360 frames) that include 5 kinds of nonverbal behaviors such as wave hand. We recruited three subjects and introduced the system briefly, then showed them the video once. Then let them imitate the video one by one for three times and record the score. For reference, we also let the orator imitate the same video, and the orator can imitate exactly and get a high score.
 
 \subsection*{Result and Discussion}
 
 \munepsfig[width=0.8\textwidth]{zong}[The score of subjects and orator]{The score of subjects and orator}
-\par In the Figure.\ref{fig:zong}, we find that the orator gets high score in all three times that prove the effectiveness of the matching algorithm. The three ubjects didn't get a good score at the first time, but they imitate the orator better for the next two times. 
+\par In the Figure.\ref{fig:zong}, we find that the orator gets a high score in all three times that prove the effectiveness of the matching algorithm. The three subjects didn't get a good score for the first time, but they imitate the orator better for the next two times. 
 
 \munepsfig[width=0.9\textwidth]{student1}[The score of student-A]{The score of student-A}
-  \par The Figure.\ref{fig:student1} shows the time variable score of student-A. In the Figure .\ref{fig:student1}, we can find that the student-A did not imitate the motion well in the frame 121 and frame 281 at the first time. And after training, he imitates better at the third time and gets a greater score. The orator can imitate his own motion well and get a score in all three time. The student can not imitate those motion at first and get a low score. But when the student imitate for three times, they can remembered the motion and imitate well, so they get a higher score at the last time. This result shows the effectiveness of the proposed matching method.
+  \par The Figure.\ref{fig:student1} shows the time variable score of student-A. In the Figure .\ref{fig:student1}, we can find that the student-A did not imitate the motion well in the frame 121 and frame 281 for the first time. Moreover, after training, he imitates better at the third time and gets a higher score. The orator can imitate his motion well and get a score in all three time. The student can not imitate those motion at first and get a low score. However, when the student imitates three times, they might remember the motion and imitate well, so they get a higher score at the last time. This result shows the effectiveness of the proposed matching method.
 
 \newpage
 
@@ -27,18 +27,18 @@
 \begin{itemize}
  \item [Step1] At first, we let the subject make a short presentation. We offer the subject a PowerPoint about the student's life in Ritsumeikan University. It has eight pages and includes some images and simple text (see Figure \ref{fig:slide}). We give each subject ten minutes to prepare for the presentation, and then let them make the presentation freely in front of three evaluators and one stuff. We also record video to review the subject's presentation.
   \munepsfig[width=0.7\textwidth]{slide}[Offered PowerPoint]{Offered PowerPoint} 
-  \item [Step2] At the same time, we let three evaluators score the subject's speech by a evaluation sheet like Figure \ref{fig:score_a1}. The evaluation standard has been introduced in chapter 3.3 and table \ref{tab:evalutioncues}.
-  \item [Step3] After the first presentation, we let the subjects do some training. We let the subjects of Group-A (A for short) use our proposed system. In the training, they were asked to imitate the speech and they can get the visual feedback from the system. In parallel, we just let the subjects of Group-B (B for short) watch the original speech video. Both subjects of A and B should do the training for three times.
+  \item [Step2] At the same time, we let three evaluators score the subject's speech by an evaluation sheet like Figure \ref{fig:score_a1}. The evaluation standard has been introduced in chapter 3.3 and table \ref{tab:evalutioncues}.
+  \item [Step3] After the first presentation, we let the subjects do some training. We let the subjects of Group-A (A for short) use our proposed system. In training, they were asked to imitate the speech, and they can get the visual feedback from the system. In parallel, we just let the subjects of Group-B (B for short) watch the original speech video. Both subjects of A and B should do the training for three times.
   \item [Step4] After training, we let the subjects make a short presentation again. The content of the presentation is the same as the presentation for the first time.
   \item [Step5] Finally, the evaluator score the subject's speech again (Figure \ref{fig:score_a1}).
 \end{itemize}
 
 \subsection*{Result}
-\par We collected the evaluation sheet from evaluators and calculate the score of each subject. The Figure \ref{fig:score_a1} shows an example of the result sheet. 
+\par We collected the evaluation sheet from evaluators and calculated the score of each subject. The Figure \ref{fig:score_a1} shows an example of the result sheet. 
 
 \munepsfig[width=0.64\textwidth]{score_a1}[An example of result sheet]{An example of result sheet}
 
- \par In the Figure \ref{fig:score_a1}, the first row is the factor of each behavior. $1$ means it's a positive behavior and will plus one point, $-1$ means it's a negative behavior and will minus one point. The three rows behind $1st$ or $2nd$ show the point which is given by evaluator 1, 2, 3. We calculate the average score of three evaluators and the increased score of the score before training and the score after training. The Figure \ref{fig:GA} and Figure \ref{fig:GB} is the score of each subjects in Group-A and Group-B. The blue bar shows the score of each subject's first presentation, and the green bar shows the score of subject's score after training. The Figure \ref{fig:result_a} and Figure \ref{fig:result_b} is the increased score of each subjects. 
+ \par In the Figure \ref{fig:score_a1}, the first row is the factor of each behavior. $1$ means it's positive behavior and will plus one point, $-1$ means it's negative behavior and will minus one point. The three rows behind $1st$ or $2nd$ show the point which is given by evaluator 1, 2, 3. We calculate the average score of three evaluators and the increased score of the score before training and the score after training. The Figure \ref{fig:GA} and Figure \ref{fig:GB} is the score of each subject in Group-A and Group-B. The blue bar shows the score of each subject's first presentation, and the green bar shows the score of the subject's score after training. The Figure \ref{fig:result_a} and Figure \ref{fig:result_b} is the increased score of each subjects. 
 
 \munepsfig[width=0.75\textwidth]{GA}[Score of each subject in Group-A]{Score of each subject in Group-A}
 
@@ -49,9 +49,9 @@
 \munepsfig[width=0.8\textwidth]{result_b}[Increased score of the subjects in Group-B]{Increased score of the subjects in Group-B}
 \par The Figure \ref{fig:GA} shows the score of each subject in Group-A. From the figure, we can see that the subject A1, A2, and A3 didn't give a good presentation at the first time. After the training, we can find that these three subjects perform better than the first time. The subject A4 and A5 give a not lousy presentation at the first time. Notably, the subject A4 get a very high score before the training. After training, the subject A4 and A5 also perform better than the first time but nor very obviously.
 
-\par The Figure \ref{fig:GB} shows the score of each subject in Group-B. From the figure, we can find that the subject B1, B2, and B5 give a bad presentation at the first time. In parallel, the subject B3 and B4 perform not bad at the first time. After the training by watching speech video, all of the subjects perform better but not very obviously except subject B5. The detail about subject's presentation will be discussed at section \ref{sub:dis}.
+\par The Figure \ref{fig:GB} shows the score of each subject in Group-B. From the figure, we can find that the subject B1, B2, and B5 give a bad presentation at the first time. In parallel, the subject B3 and B4 perform not bad for the first time. After the training by watching speech video, all of the subjects perform better but not very obviously except subject B5. The detail about the subject's presentation will be discussed in section \ref{sub:dis}.
 
-\par According to the Figure \ref{fig:result_a} and Figure \ref{fig:result_b}, all of subjects perform better after training by our system or not. We find that the average increased score of Group-A is 8, and the average increased score of Group-B is 7. It proves that the Group-A improved more than the Group-B and the proposed system is effective to train the presentation skill. We did an independent two-sample t-test and the P-value approximately equal to 0.285 (single tail). So we can't reject the null hypothesis. However, the score of subject A4 and B5 are not representative. If we ignore the score of subject A4 and B5, the P-value will be 0.026 (single tail) and we reject the null hypothesis. According to this result, we improved the effectiveness of our proposed system.
+\par According to the Figure \ref{fig:result_a} and Figure \ref{fig:result_b}, all of subjects perform better after training by our system or not. We find that the average increased score of Group-A is 8, and the average increased score of Group-B is 7. It proves that the Group-A improved more than the Group-B and the proposed system is effective to train the presentation skill. We did an independent two-sample t-test and the P-value approximately equal to 0.285 (single tail). So we can't reject the null hypothesis. However, the score of subject A4 and B5 are not representative. If we ignore the score of subject A4 and B5, the P-value will be 0.026 (single tail), and we reject the null hypothesis. According to this result, we improved the effectiveness of our proposed system.
 
 
 \subsection*{Discussion}
@@ -59,7 +59,7 @@
 
 \par After the experiment, we made a short interview and analysis some subject's presentation.
 
-\par From the recorded video, we find that the subject A2 didn't give a great presentation at the first time, he was always avoid the eye contact with the evaluator and stay the same gesture (see Figure \ref{fig:before_a2}). After training, he made more gesture and more eye contact with the evaluator consciously(see Figure \ref{fig:after_a2}).
+\par From the recorded video, we find that the subject A2 didn't give a great presentation at the first time, he always avoided the eye contact with the evaluator and stay the same gesture (see Figure \ref{fig:before_a2}). After training, he made more gesture and more eye contact with the evaluator consciously(see Figure \ref{fig:after_a2}).
 
 \munepsfig[width=0.8\textwidth]{before_a2}[The subject A2 before training]{The subject A2 before training}
 \munepsfig[width=0.8\textwidth]{after_a2}[The subject A2 after training]{The subject A2 after training}
@@ -68,7 +68,7 @@
 
 \munepsfig[width=0.85\textwidth]{score_a2}[A part of evaluation sheet for subject A2]{A part of evaluation sheet for subject A2}
 
-\par In the interview, the subject A2 tell us that Kennedy's speech is very impressive because not only what he said but also his gesture and vocal behavior. In training, the subject A2 was asked to imitate those behaviors, so he does some gesture and eye contact consciously at the second presentation. 
+\par In the interview, the subject A2 tell us that Kennedy's speech is awe-inspiring because not only what he said but also his gesture and vocal behavior. In training, the subject A2 was asked to imitate those behaviors, so he does some gesture and eye contact consciously at the second presentation. 
 
 \par The subject A4 got a very high score in both twice presentations. From the recorded video, he shows his presentation skills for the first time. After training by propose system, he uses more gesture to make his presentation more intelligible. The evaluation sheet also shows that he performs better in the second time.    
 
@@ -113,4 +113,6 @@
 % \multicolumn{2}{|l|}{\textbf{Average Point}} & \multicolumn{3}{c|}{-5} & \multicolumn{3}{c|}{7} \\ \hline
 % \end{tabular}
 % \end{table}
+
+
 
